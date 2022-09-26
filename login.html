@@ -59,3 +59,45 @@ span.psw {
   float: right;
   padding-top: 16px;
 }
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 20%;
+  }
+}
+</style>
+</head>
+<body style="background-color:whitesmoke;">
+<marquee style="font: size 40px;color:red;font-family:sans-serif;"><b>!! Pls Fill The Login Details Carefully!!</b></marquee>
+<h2 style="text-align:center;font-size:30px;"> Login Details </h2><br>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="avatar.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b><h4 stlye="text-align:center;">Username</b></h4></label>
+  <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+
+  <label for="uname"><b><h4 stlye="text-align:center;">Password</b></h4></label>
+  <input type="password" placeholder="Enter Password" name="psw" required><br>
+  <br>
+       <button type="submit" style="font-size:30;">LOGIN</button><br>
+    <label><br>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label><br>
+  </div>
+
+  <span class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </span>
+</form>
+
+</body>
+</html>
